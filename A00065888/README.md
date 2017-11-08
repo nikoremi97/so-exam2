@@ -71,6 +71,7 @@ Y en este caso, queremos que cuando un servicio se caiga, el otro pueda ocupar e
 ## Referencias:
 https://github.com/ICESI/so-processes/tree/master/03_systemd
 https://docs.docker.com/engine/admin/resource_constraints/#configure-the-default-cfs-scheduler
+https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html
 
 [1]: images/1core.JPG
 [2]: images/procesos.JPG
