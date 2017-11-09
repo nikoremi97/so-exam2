@@ -70,10 +70,10 @@ Y en este caso, queremos que cuando un servicio se caiga, el otro pueda ocupar e
 ### CPUQuota vs CPUShares  
 Dado que los recursos, en casi todos los ambientes de trabajo, son limitados, hay que trabajar de forma eficiente con ellos. Existen grupos de control, que permiten establecer un límite a los recursos consumidos por un servicio o proceso para tener control de los mismos. Estos grupos de control son CPUQuota y CPUShares.
 ### CPUQuota  
-Asigna la cuota de tiempo de CPU especificada a los procesos ejecutados. Toma un valor porcentual, con el sufijo "%". El porcentaje especifica cuánto tiempo de CPU la unidad debe obtener al máximo, en relación con el tiempo total de CPU disponible en una CPU. Si se utiliza esta opción, se limita de forma permanente los recursos de un servicio. Es decir, si tengo dos servicios a los cuales les asigno únicamente el 50% de los recursos de CPU, cuando uno de eestos servicios caiga, el otro seguirá utilizando únicamente el 50% asignado. 
+Asigna la cuota de tiempo de CPU especificada a los procesos ejecutados. Toma un valor porcentual, con el sufijo "%". El porcentaje especifica cuánto tiempo de CPU la unidad debe obtener al máximo, en relación con el tiempo total de CPU disponible en una CPU. Si se utiliza esta opción, se limita de forma permanente los recursos de un servicio. Es decir, si tengo dos servicios a los cuales les asigno únicamente el 50% de los recursos de CPU, cuando uno de estos servicios caiga, el otro seguirá utilizando únicamente el 50% asignado de los recursos. 
 
 ### CPUShares  
-Asigna el peso compartido de tiempo de CPU especificado a los procesos ejecutados. Estas opciones toman un valor entero y controlan el  atributo "cpu.shares" del grupo de control. El rango permitido es de 2 a 262144. El valor predeterminado es 1024.
+Asigna el peso compartido de tiempo de CPU especificado a los procesos ejecutados. Estas opciones toman un valor entero y controlan el  atributo "cpu.shares" del grupo de control. El rango permitido es de 2 a 262144. El valor predeterminado es 1024. Si se utiliza esta opción, no se limita de forma permanente los recursos de un servicio. Es decir, si tengo dos servicios a los cuales les asigno únicamente el 50% de los recursos de CPU, cuando uno de estos servicios caiga, el otro pasará a ocupar el 100% de los recursos que tenga disponible.  
 
 
 ## Referencias:
