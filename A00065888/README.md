@@ -34,6 +34,10 @@ Haciendo esto, le decimos al sistema operativo dónde se encuentra el script que
 ```
 CPUQuota=50%.  
 ```
+Para saber qué procesos se están ejecutando y mirar el porcentaje de CPU que utilizan, usamos el comando  
+```
+top  
+```
 Tenemos que verificar que no haya otro proceso corriendo:  
 ![][4]
 El paso siguiente es levantar el servicio, lo hacemos de la siguiente manera:  
