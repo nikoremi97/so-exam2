@@ -74,6 +74,7 @@ Asigna la cuota de tiempo de CPU especificada a los procesos ejecutados. Toma un
 
 ### CPUShares  
 Asigna el peso compartido de tiempo de CPU especificado a los procesos ejecutados. Estas opciones toman un valor entero y controlan el  atributo "cpu.shares" del grupo de control. El rango permitido es de 2 a 262144. El valor predeterminado es 1024. Si se utiliza esta opción, no se limita de forma permanente los recursos de un servicio. Es decir, si tengo dos servicios a los cuales les asigno únicamente el 50% de los recursos de CPU, cuando uno de estos servicios caiga, el otro pasará a ocupar el 100% de los recursos que tenga disponible.  
+Como conclusión, podríamos decir que utilizamos CPUQuota cuando la limitación de los recursos es crítica y debe haber alguien que la controle de forma manual. Y utilizamos CPUShares, cuando queremos que se aprovechen los recursos disponibles de manera más automática.
 
 
 ## Referencias:
