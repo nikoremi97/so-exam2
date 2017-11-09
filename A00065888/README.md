@@ -5,6 +5,7 @@
 **Estudiante:** Nicolas Recalde Miranda
 **Tema:** Namespaces, CGroups, LXC
 **Correo:** daniel.barragan at correo.icesi.edu.co
+**Link:** https://github.com/nikoremi97/so-exam2/blob/A00065888/Parcial2/A00065888/README.md
 
 ### Objetivos
 * Comprender los fundamentos que dan origen a las tecnologías de contenedores virtuales
