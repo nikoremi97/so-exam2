@@ -67,9 +67,11 @@ Y en este caso, queremos que cuando un servicio se caiga, el otro pueda ocupar e
 ![][11]  
 
 ## Punto 5
-### CPUQuota vs CPUShares
-### CPUQuota
-### CPUShares
+### CPUQuota vs CPUShares  
+Dado que los recursos, en casi todos los ambientes de trabajo, son limitados, hay que trabajar de forma eficiente con ellos. Existen grupos de control, que permiten establecer un límite a los recursos consumidos por un servicio o proceso para tener control de los mismos. Estos grupos de control son CPUQuota y CPUShares.
+### CPUQuota  
+
+### CPUShares  
 
 
 ## Referencias:
